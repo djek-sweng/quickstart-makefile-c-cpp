@@ -35,12 +35,12 @@ $(BIN_DIR)/%.cpp.o: %.cpp
 	mkdir -p $(dir $@)
 	$(CXX) $(CPPFLAGS) -c $< -o $@
 
-.PHONY: prepare
-prepare:
+.PHONY: restore
+restore:
 	mkdir $(BIN_DIR)
 
-.PHONY: cleanup
-cleanup:
+.PHONY: clean
+clean:
 	rm -rf $(BIN_DIR)
 
 -include $(DEPS)

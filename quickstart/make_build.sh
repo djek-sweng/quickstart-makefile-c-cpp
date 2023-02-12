@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # build progamm (with make)
-make cleanup
-make prepare
+make clean
+make restore
 make
 
 exit 0
